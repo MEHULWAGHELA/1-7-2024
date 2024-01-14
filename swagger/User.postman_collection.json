@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "6e55dbae-2c41-4640-bc1d-15c850ccd9a2",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28880579"
+	},
+	"item": [
+		{
+			"name": "userPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"Chirag rawal\",\r\n    \"email\":\"chiragRawal@gmail.com\",\r\n    \"age\":27,\r\n    \"password\":\"123\",\r\n    \"status\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/user/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userUpdate",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"Mehul Waghela\",\r\n    \"email\":\"mehulWaghela63@gmail.com\",\r\n    \"age\":27,\r\n    \"password\":\"\",\r\n    \"status\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/user/patch/65a38f1a1a5a7e4931ad2d08",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"patch",
+						"65a38f1a1a5a7e4931ad2d08"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userPost Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/user/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
